@@ -106,12 +106,6 @@ pnpm bootstrap
 pnpm dev:dooring
 ```
 
-### 运行项目云搭渲染器H5
-
-```bash
-pnpm dev:render
-```
-
 ## 版本更新
  ### 1.0 Beat 版本上线
 
