@@ -29,7 +29,7 @@
 
 云搭是一款功能强大、开源、免费的可视化搭建解决方案，它支持零代码搭建小程序、H5、问卷、图文等多种应用，我致力于提供一套简单、便捷、专业、可靠的多场景零代码平台。
 
-技术栈前端为vue3，后端基于nodejs进行开发
+技术栈前端为vue3，后端基于node进行开发
 
 ## 线上平台
 
@@ -106,12 +106,6 @@ pnpm bootstrap
 pnpm dev:dooring
 ```
 
-### 运行项目云搭渲染器H5
-
-```bash
-pnpm dev:render
-```
-
 ## 版本更新
  ### 1.0 Beat 版本上线
 
@@ -120,6 +114,12 @@ pnpm dev:render
 - 支持容器组件无限层级嵌套布局
 - 支持自定义表单搭建，提供表单-列表-详情页的整链路设计方案
 - 开放资源广场，为用户提供更多的模板，帮助用户快速搭建
+  
+### 友情赞助商
+
+<a href="https://pro.kuaitu.cc" style="text-decoration: none; color: #1e6bb8; word-wrap: break-word; font-weight: bold; border-bottom: 1px solid #1e6bb8;">
+  <img src="./static/kuaitu.png" alt style="width: 20%;">
+</a>
 
 ## 开源不易, 有了您的赞助, 我们会做的更好~
 
