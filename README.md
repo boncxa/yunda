@@ -123,7 +123,23 @@ pnpm dev:dooring
   <img src="./static/kuaitu.png" alt style="width: 20%;">
 </a>
 
-## 开源不易, 有了您的赞助, 我们会做的更好~
+### 友情捐助用户
+
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/nihaojob">
+                    <img src="https://avatars.githubusercontent.com/u/13534626?v=4" width="80;" alt="nihaojob"/>
+                    <br />
+                    <sub><b>nihaojob</b></sub>
+                </a>
+            </td>
+    </tr>
+  </tbody>
+</table>
+
+### 开源不易, 有了您的赞助, 我们会做的更好~
 
   <img src="./static/collection.png" alt style="width: 20%;">
 
