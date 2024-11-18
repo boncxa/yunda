@@ -135,6 +135,16 @@ pnpm dev:dooring
                     <sub><b>nihaojob</b></sub>
                 </a>
             </td>
+	    <td align="center">
+                <a href="https://github.com/lifeng286">
+                    <img src="https://avatars.githubusercontent.com/u/48050566?v=4" width="80;" alt="nihaojob"/>
+                    <br />
+                    <sub><b>lifeng286</b></sub>
+                </a>
+           </td>
+	    <td align="center">
+                    <sub><b>mikehhuang@126.com</b></sub>
+           </td>
     </tr>
   </tbody>
 </table>
