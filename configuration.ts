@@ -9,7 +9,7 @@ const Configuration = {
   // 云搭后端请求地址
   YUNDA_API_PATH: "https://www.sunmao-design.top/mall-cook/yunda",
   // 云搭搭建H5地址
-  YUNDA_H5_PATH: "https://www.sunmao-design.top/sunmao/render/#/",
+  YUNDA_H5_PATH: "http://localhost:5002/#/",
 };
 
 export default Configuration;

@@ -16,7 +16,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import DesignProductWork from "@/components/DesignProductWork";
+import DesignProductWork from "@/components/DesignProductWork/index.vue";
 
 let loading = ref(true);
 
