@@ -10,7 +10,7 @@ import type { App } from "vue";
 // 注册所有物料
 function registeredWidget(app: App) {
   console.log("注册所有物料");
-  const modules: any = import.meta.globEager("./src/widgets/**/index.vue");
+  const modules: any = import.meta.glob("./src/widgets/**/index.vue", { eager: true });
 
   for (const path in modules) {
     const regex = /\/src\/widgets\/([^/]+)\/index\.vue$/;
@@ -28,8 +28,7 @@ function registeredWidget(app: App) {
  */
 function registeredWidgetMeta() {
   const metaList: any[] = [];
-  const modules: any = import.meta.globEager("./src/**/meta.ts");
-  console.log("modules", modules);
+  const modules: any = import.meta.glob("./src/**/meta.ts", { eager: true });
 
   for (const path in modules) {
     let meta = modules[path].default;

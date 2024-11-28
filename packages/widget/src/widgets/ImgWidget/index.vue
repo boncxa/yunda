@@ -10,7 +10,7 @@
     <img
       class="img"
       :style="{ borderRadius: `${getUpx(radius)}` }"
-      :src="props.url || baseUrl"
+      :src="baseUrl"
       mode="widthFix"
       @click="handleRoute"
     />
@@ -29,8 +29,7 @@ const props = defineProps({
 
 const emits = defineEmits(["route"]);
 
-let baseUrl =
-  "https://img01.yzcdn.cn/public_files/2019/03/05/2b60ed750a93a1bd6e17fc354c86fa78.png!large.webp";
+const baseUrl =ref("https://img01.yzcdn.cn/public_files/2019/03/05/2b60ed750a93a1bd6e17fc354c86fa78.png!large.webp");
 
 function handleRoute() {
   console.log('props.route', props.route);

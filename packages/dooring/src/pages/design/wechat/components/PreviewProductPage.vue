@@ -28,16 +28,16 @@ import { ref, toRefs, watch } from "vue";
 import { useWechatStore } from "@/store/wechat";
 import Configuration from "@/configuration/index";
 
-let loading = ref(true);
-const iframeRef = ref(null);
-const { wechat } = toRefs(useWechatStore());
-const path = `${Configuration.YUNDA_H5_PATH}${props.path}`;
 const props = defineProps({
   path: {
     type: String,
     default: "",
   },
 });
+const path = `${Configuration.YUNDA_H5_PATH}${props.path}`;
+let loading = ref(true);
+const iframeRef = ref(null);
+const { wechat } = toRefs(useWechatStore());
 
 // iframe加载完毕后
 function handleLoad() {

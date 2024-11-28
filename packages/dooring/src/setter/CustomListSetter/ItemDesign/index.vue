@@ -107,7 +107,7 @@ const drag = reactive({
 });
 const widgetMetaList = ref([]);
 const registerWidgetMeta = () => {
-  const modules: any = import.meta.globEager("./metas/*.ts");
+  const modules: any = import.meta.glob("./metas/*.ts", { eager: true });
   for (const key in modules) {
     widgetMetaList.value.push(modules[key]?.default);
   }

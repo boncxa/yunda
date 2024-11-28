@@ -8,7 +8,7 @@
 import type { App } from "vue";
 
 function registeredSetter(app: App) {
-  const modules: any = import.meta.globEager("@/setter/**/index.vue");
+  const modules: any = import.meta.glob("@/setter/**/index.vue", { eager: true });
 
   for (const path in modules) {
     const regex = /\/([^/]+)\/index\.vue$/;
@@ -22,3 +22,4 @@ function registeredSetter(app: App) {
 }
 
 export { registeredSetter };
+

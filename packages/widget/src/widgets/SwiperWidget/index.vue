@@ -7,9 +7,10 @@
 -->
 <template>
   <div>
-    <u-swiper
+    <wd-swiper
       :list="list"
-      keyName="image"
+      value-key="image" 
+      text-key="title"
       indicator
       :indicatorMode="indicatorMode"
       :showTitle="showTitle"
@@ -18,7 +19,7 @@
       imgMode="aspectFill"
       circular
       @click="handleClick"
-    ></u-swiper>
+    ></wd-swiper>
   </div>
 </template>
 

@@ -3,31 +3,30 @@
  * @Author: WangYuan
  * @Date: 2024-11-27
  */
-import mitt from 'mitt';
+import mitt from 'mitt'
 
-const emitter = mitt();
+const emitter = mitt()
 
 export const useParentBus = () => {
   const parentBus = {
     on: (event: string, callback: Function) => {
-      emitter.on(event, callback as any);
+      emitter.on(event, callback as any)
       window.addEventListener('message', (e) => {
         if (e.data.event === event) {
-          callback(e.data.data);
+          callback(e.data.params)
         }
-      });
+      })
     },
-    emit: (event: string, data: any) => {
-      emitter.emit(event, data);
-      window.parent.postMessage({ event, data }, '*');
+    emit: (event: string, params: any) => {
+      emitter.emit(event, params)
+      window.parent.postMessage({ event, params }, '*')
     },
     off: (event: string, callback?: Function) => {
-      emitter.off(event, callback as any);
-      // Note: We can't remove specific message event listeners
-    }
-  };
+      emitter.off(event, callback as any)
+    },
+  }
 
   return {
-    parentBus
-  };
-};
+    parentBus,
+  }
+}

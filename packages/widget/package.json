@@ -12,6 +12,7 @@
     "@dcloudio/uni-app": "3.0.0-3090920231225001",
     "@vueuse/core": "^10.9.0",
     "dayjs": "^1.11.11",
-    "uview-plus": "^3.2.11"
+    "uview-plus": "^3.2.11",
+    "wot-design-uni": "^1.4.0"
   }
 }

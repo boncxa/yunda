@@ -30,7 +30,7 @@ registerWidgetMeta();
 
 // 注册物料meta
 function registerWidgetMeta() {
-  const modules: any = import.meta.globEager("./WigetMetas/*.ts");
+  const modules: any = import.meta.glob("./WigetMetas/*.ts", { eager: true });
   console.log("注册物料meta:", modules);
   for (const key in modules) {
     widgetMetaList.value.push(modules[key]?.default);
